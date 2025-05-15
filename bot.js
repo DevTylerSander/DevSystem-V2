@@ -16,8 +16,15 @@ const client = new Client({
 });
 
 // Listen for database events
-dbEvents.on('connected', (message) => {
+dbEvents.on('connected', async (message) => {
     console.log(`[Database] ${message}`);
+    try {
+        // Sync all models
+        await sequelize.sync();
+        console.log('[Database] Models synchronized successfully');
+    } catch (error) {
+        console.error('[Database] Error synchronizing models:', error);
+    }
 });
 
 dbEvents.on('error', (message) => {

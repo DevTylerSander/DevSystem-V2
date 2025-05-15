@@ -14,7 +14,10 @@
     "js-beautify": "^1.15.4",
     "mysql2": "^3.6.5",
     "prettier": "^3.5.3",
-    "sequelize": "^6.35.1"
+    "quick.db": "^9.1.7",
+    "sequelize": "^6.35.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

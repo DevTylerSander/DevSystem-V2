@@ -24,10 +24,8 @@ All commands should have auto complete information and data should be persistent
 /errorlogs {file} - this will allows user to send error logs (only allows .txt files) (This command goes in /commands/utilitys folder)
 
 
--Simple Commands-
-/help {command} - gives information on a command (This command goes in /utilitys folder)
 
--Complex Commands-
+
 /Development (This command goes in /commands/development folder)
 	-Create {name}{type} - creates new channels and role for testing new bots
 		-{types} (Text, Voice, Forum, Announcement)
@@ -35,17 +33,11 @@ All commands should have auto complete information and data should be persistent
 	-delete {name} - deletes channels for testing bots
 
 /dev (This command goes in  /commands/dev folder)
-	-add {user} - gives a user the developer role
+	-add {user} - gives a user the developer role this should open a menu for the user to fill out information about the new developer. Like what programing languages they know. some stuff about them ect.
 	-remove {user} - removes the developer role from user
 	-info {user} - gives information about the developer
 	-update {user} - updates users information
 
-/commission (only allows users to create a ticket if they have accepted the tos) (This command goes in  /commands/commission folder)
-	-create - this creates a commission ticket
-	-delete - this deletes a commission ticket
-	-close	- this closes a commission ticket
-	-assign - this will assign a developer to a commission
-	-remove - this will remove a developer from a commission
 
 /embed (This command goes in  /commands/embed folder)
 	-create {name} - this will open a menu and ask for a all information regarding a embed and store these in a database
@@ -59,12 +51,6 @@ All commands should have auto complete information and data should be persistent
 	-edit {name} - this allows a user to edit a stored snippet
 	-delete {name} - this allows a user to delete a stored snippet from the database
 
-/tag (This command goes in  /commands/tag folder)
-	-create {name}{message} - creates quick messages that is stored in a database and can be sent by any user
-	-send {channel} - sends a quick message to a channel
-	-edit {name} - edits a quick message that has been stored in a database
-	-delete {name} - deletes a quick message that was stored in a database
-
 /changelog - opens a menu with 5 sections ([+] Added, [*] Improved, [/] Changed, [!] Fixed, [-] Deleted) (This command goes in  /commands/changelog folder)
 	- when the user is done they will click submit
 	- then it will send the changelog in the channel the command was issued in
@@ -76,6 +62,44 @@ All commands should have auto complete information and data should be persistent
 		[!] Fixed {message}
 		[-] Deleted {message}
 	-if the user has added multiple lines for a section it will add another line
+
+/tag (This command goes in  /commands/tag folder)
+	-create {name}{message} - creates quick messages that is stored in a file database and can be sent by any user
+	-send {channel} - sends a quick message to a channel
+	-edit {name} - edits a quick message that has been stored in a file database
+	-delete {name} - deletes a quick message that was stored in a file database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Simple Commands-
+/help {command} - gives information on a command (This command goes in /utilitys folder)
+
+-Complex Commands-
+
+
+/commission (only allows users to create a ticket if they have accepted the tos) (This command goes in  /commands/commission folder)
+	-create - this creates a commission ticket
+	-delete - this deletes a commission ticket
+	-close	- this closes a commission ticket
+	-assign - this will assign a developer to a commission
+	-remove - this will remove a developer from a commission
+
+
+
+
+
+
 
 /tos (This command goes in  /commands/tos folder)
 	-setup {channel}{role} - opens a menu so a user can set the message for the embed message and adds a accept button to the embed if a user accepts the embed they get the role 
@@ -114,13 +138,6 @@ All commands should have auto complete information and data should be persistent
 	-setup {logs-channel}
 	-logs - this should send detailed command logs to a channel that is setup in the /admin setup command
 	-analytics {command} - monitor command usage and engagement statistics
-
-
-
-
-
-
-
 
 
 
