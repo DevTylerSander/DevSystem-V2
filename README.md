@@ -13,7 +13,6 @@ A Discord bot for managing development, moderation, commissions, tags, changelog
 - **PayPal Integration**: Each developer can set, update, and send their own PayPal.me link (restricted to registered developers).
 - **Customer Management**: Create customer channels, send invoices, and manage customer data.
 - **Task Management**: Create, edit, complete, and list tasks for customers and admins.
-- **Admin Tools**: Server management, analytics, logs, and more.
 
 ## Command Reference
 See the Wiki for full details. Highlights:
