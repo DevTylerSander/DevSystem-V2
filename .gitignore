@@ -19,3 +19,20 @@ Thumbs.db
 
 # Misc
 *.bak 
+
+#DevSystem-V2
+DevSystem-V2.md
+
+#database
+database.sqlite
+
+#packages
+packages.json
+package-lock.json
+
+#wiki
+/wiki/*.md
+
+
+#node_modules
+node_modules/*
