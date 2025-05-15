@@ -39,7 +39,7 @@ See the Wiki for full details. Highlights:
 - `/paypal send`: Send your PayPal.me link as an embed with a button (developers only)
 
 ### More
-- `/embed`, `/snippet`, `/commission`, `/tos`, `/customer`, `/task`, `/admin` and more.
+- `/embed`, `/snippet`, `/commission`, `/tos`, `/customer`, `/task` and more.
 
 ## Persistent Data
 - All data is stored in the `data/` directory as JSON files for tags, developers, PayPal links, etc.
